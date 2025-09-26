@@ -110,5 +110,4 @@ public class CiudadController {
 		model.addAttribute("ciudad", ciuda);
 		return ACTION_1;
 	}
-	
 }

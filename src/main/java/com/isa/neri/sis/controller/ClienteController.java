@@ -63,10 +63,8 @@ public class ClienteController {
 		else {			
 			List<Cliente> listadoClientes = clienteService.listarTodos();
 			model.addAttribute("clientes", listadoClientes);		
-		}
-		
+		}		
 		return "/views/clientes/listar";
-		
 	}
 	
 	@GetMapping("/create")
