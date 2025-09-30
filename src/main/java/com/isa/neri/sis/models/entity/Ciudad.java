@@ -19,7 +19,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Entity      
 @Table(name="ciudades")
 public class Ciudad implements Serializable{
-	
+	// Ciudades
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -34,8 +34,7 @@ public class Ciudad implements Serializable{
 	@Column(name = "FECHA", updatable = false, nullable = false)
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "dd/MM/yyyy")	
-	private Date  fecha;	
-	
+	private Date  fecha;		
 	
 	public Integer getIdciudad() {
 		return idciudad;
