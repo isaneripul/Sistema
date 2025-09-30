@@ -18,12 +18,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import com.isa.neri.sis.models.entity.Ciudad;
 import com.isa.neri.sis.models.entity.Cliente;
 import com.isa.neri.sis.models.service.ICiudadService;
 import com.isa.neri.sis.models.service.IClienteService;
-
 import com.isa.neri.sis.models.repository.ClienteRepository;
 
 
