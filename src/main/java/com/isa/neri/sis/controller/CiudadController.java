@@ -23,6 +23,7 @@ import com.isa.neri.sis.models.entity.Ciudad;
 import com.isa.neri.sis.models.repository.CiudadRepository;
 import com.isa.neri.sis.models.service.ICiudadService;
 
+
 @Controller
 @RequestMapping("/views/ciudades")
 public class CiudadController {

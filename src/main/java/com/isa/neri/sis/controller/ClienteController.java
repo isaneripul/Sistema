@@ -26,6 +26,7 @@ import com.isa.neri.sis.models.service.IClienteService;
 
 import com.isa.neri.sis.models.repository.ClienteRepository;
 
+
 @Controller
 @RequestMapping("/views/clientes")
 public class ClienteController {
@@ -80,7 +81,6 @@ public class ClienteController {
 		
 		return "/views/clientes/frmCrear";
 	}
-	
 	
 	//public String guardar(Cliente cliente, Model model) {
 	
