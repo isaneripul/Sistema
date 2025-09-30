@@ -17,7 +17,7 @@ import javax.validation.constraints.Pattern;
 @Entity
 @Table(name="clientes")
 public class Cliente implements Serializable{
-	
+	// Inicio
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -107,6 +107,5 @@ public class Cliente implements Serializable{
 		return "Cliente [idcliente=" + idcliente + ", nombre=" + nombre + ", apaterno=" + apaterno + ", amaterno="
 				+ amaterno + ", telefono=" + telefono + ", email=" + email + ", ciudad=" + ciudad + "]";
 	}
-	
 	
 }
