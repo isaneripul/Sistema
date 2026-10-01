@@ -104,8 +104,6 @@ public class PacienteController {
 			return "redirect:/views/pacientes/";
 		}
 		
-		
-		
 		model.addAttribute("titulo", "Formulario: Editar Paciente");
 		model.addAttribute("paciente", paciente); 
 		
