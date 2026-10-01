@@ -78,7 +78,7 @@ public class PacienteController {
 			model.addAttribute("titulo", "Formulario: Nuevo Paciente");
 			model.addAttribute("paciente", paciente);
 			logger.info("Existieron en el fomulario ! ");			
-			return "/views/pacientes/frmPaciente";
+			return ACTION_1;
 		}
 		logger.info("Datos a insertar " + paciente.toString());
 		pacienteService.guardar(paciente);
