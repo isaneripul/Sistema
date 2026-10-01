@@ -43,7 +43,7 @@ public class ClienteController {
 	@GetMapping("/")
 	public String listarClientes(@PageableDefault(size = 10) Pageable pageable, @RequestParam(name = "value", required = false) String value, Model model) {
 		
-		logger.info("Valor " + value);
+		logger.fine("Valor :" + value);
 		logger.info("Pagina " + pageable);		
 		
 		model.addAttribute("titulo", "Lista de Clientes");	
