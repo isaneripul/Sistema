@@ -54,7 +54,6 @@ public class PacienteController {
 
 					pacientesRepository.findAll( pageable));				
 			
-			
 			return "/views/pacientes/listarPacientes";
 		}else {
 			List<Pacientes> listadoPacientes = pacienteService.listarPacientes();
