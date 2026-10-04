@@ -51,9 +51,7 @@ public class PacienteController {
 			model.addAttribute("pacientes", 
 					//pacientesRepository.findByIdpacienteContainingOrnombreContainingOrapaternoContainingOramaternoContainingOrsexoContainingOredadContainingOrfhnacimientoContainingOrfhentradaContainingOrfhaltaContainingAllIgnoreCase
 					//(value, value, value, value, value, value, value, value, value, pageable));				
-
-					pacientesRepository.findAll( pageable));				
-			
+					pacientesRepository.findAll( pageable));							
 			return "/views/pacientes/listarPacientes";
 		}else {
 			List<Pacientes> listadoPacientes = pacienteService.listarPacientes();
