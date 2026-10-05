@@ -42,7 +42,6 @@ public class PacienteController {
 		
 		logger.fine("Valor :" + value);
 		logger.info("Pagina " + pageable);		
-		
 		model.addAttribute("titulo", "Lista de Pacientes");	
 		
 		if (value != null) {
