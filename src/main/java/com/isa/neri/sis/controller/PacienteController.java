@@ -99,7 +99,6 @@ public class PacienteController {
 			attribute.addFlashAttribute("error", "ATENCIÓN: Error con el Id del paciente!");
 			return "redirect:/views/pacientes/";
 		}
-		
 		model.addAttribute("titulo", "Formulario: Editar Paciente");
 		model.addAttribute("paciente", paciente); 
 		
