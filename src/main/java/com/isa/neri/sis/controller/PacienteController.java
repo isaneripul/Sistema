@@ -81,7 +81,6 @@ public class PacienteController {
 		logger.info("Paciente guardado con exito! ");
 		attribute.addFlashAttribute("success", "Paciente guardado con exito!");		
 		return "redirect:/views/pacientes/";
-		
 	}
 	
 	@GetMapping("/editar/{id}")
