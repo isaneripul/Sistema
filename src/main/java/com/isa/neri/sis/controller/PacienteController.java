@@ -42,7 +42,6 @@ public class PacienteController {
 		
 		logger.fine("Valor :" + value);
 		logger.info("Pagina " + pageable);		
-		
 		model.addAttribute("titulo", "Lista de Pacientes");	
 		
 		if (value != null) {
@@ -51,10 +50,7 @@ public class PacienteController {
 			model.addAttribute("pacientes", 
 					//pacientesRepository.findByIdpacienteContainingOrnombreContainingOrapaternoContainingOramaternoContainingOrsexoContainingOredadContainingOrfhnacimientoContainingOrfhentradaContainingOrfhaltaContainingAllIgnoreCase
 					//(value, value, value, value, value, value, value, value, value, pageable));				
-
-					pacientesRepository.findAll( pageable));				
-			
-			
+					pacientesRepository.findAll( pageable));							
 			return "/views/pacientes/listarPacientes";
 		}else {
 			List<Pacientes> listadoPacientes = pacienteService.listarPacientes();
@@ -85,7 +81,6 @@ public class PacienteController {
 		logger.info("Paciente guardado con exito! ");
 		attribute.addFlashAttribute("success", "Paciente guardado con exito!");		
 		return "redirect:/views/pacientes/";
-		
 	}
 	
 	@GetMapping("/editar/{id}")
@@ -103,9 +98,6 @@ public class PacienteController {
 			attribute.addFlashAttribute("error", "ATENCIÓN: Error con el Id del paciente!");
 			return "redirect:/views/pacientes/";
 		}
-		
-		
-		
 		model.addAttribute("titulo", "Formulario: Editar Paciente");
 		model.addAttribute("paciente", paciente); 
 		
